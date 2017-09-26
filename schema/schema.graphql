@@ -84,7 +84,6 @@ const resolvers ={
   }
 }
 
-
 const schema = makeExecutableSchema({
   typeDefs,  // definicion de tipos
   resolvers
@@ -96,7 +95,7 @@ schema,
 mocks:{ // definir como se resuelve cada entidad mocks
   Curso:()=>{
     return{
-      id:casual.uuid,
+      id:casual.uuid,  
       titulo: casual.sentence,
       descripcion:casual.sentences(2)
     }
@@ -108,7 +107,7 @@ mocks:{ // definir como se resuelve cada entidad mocks
     }
   }
 },
-preserveResolvers:false // responder con los valores de el resolvers
+preserveResolvers:true // responder con los valores de el resolvers
 })
 
 module.exports = schema

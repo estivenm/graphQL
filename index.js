@@ -12,8 +12,6 @@ app
   .use('/graphiql', graphiqlExpress({ endpointURL: '/graphql' }))
 
 
-
-  
 app.listen(3000, () => {
   console.log(`app corriendo correctamente`);
 })
