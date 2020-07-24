@@ -9,7 +9,7 @@ module.exports = {
     host: 'localhost',
     user: 'root',
     password: '',
-    database: 'aulavirtual_trainmev3',
+    database: '',
     port: 3306,
   },
 };
